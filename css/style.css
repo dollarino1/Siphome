@@ -187,7 +187,7 @@ header a {
   .wrapper__text {
     padding-right: 500px;
   }
-  .wrapper__menu {
+  .nav__menu {
     display: none;
   }
 }
@@ -239,22 +239,16 @@ header a {
     background-image: url("../img/bg-blue2.png");
     background-size: 100%;
   }
-  .wrapper__menu {
+  .nav__menu {
     display: block;
     background: none;
-    border: 1px solid #FFFFFF;
-    border-radius: 3px;
-    height: 36px;
-    width: 84px;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
     color: white;
     margin-left: 38px;
     cursor: pointer;
-  }
-  .header__home, .header__link, .header__user {
-    display: none;
+    z-index: 2;
   }
   .wrapper {
     margin-top: 100px;
@@ -278,6 +272,51 @@ header a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 262px;
+  }
+  .line {
+    background: white;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+  }
+  .header__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background: #765fcf;
+    height: 550px;
+    width: 100%;
+    bottom: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    clip-path: circle(0px at 100% -10%);
+    -webkit-clip-path: circle(0px at 100% -10%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .header__items li {
+    margin-bottom: 60px;
+  }
+  .header__items li:first-child {
+    margin-top: 150px;
+  }
+  .header__items.open {
+    clip-path: circle(1200px at 90% -20%);
+    -webkit-clip-path: circle(1200px at 90% -20%);
+    pointer-events: all;
+  }
+  .header__user {
+    display: none;
   }
 }
 
