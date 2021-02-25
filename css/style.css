@@ -9,7 +9,7 @@ font-family: 'Inter', sans-serif;
           box-sizing: border-box;
 }
 
-body {
+.block-1 {
   font-family: 'Inter', sans-serif;
   background-image: url("../img/bg-blue.png");
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 header ul {
@@ -99,29 +99,31 @@ header a {
   margin-right: 12px;
 }
 
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+/* Iphone 5 */
 .wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 800px 550px;
-      grid-template-columns: 800px 550px;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 96px;
 }
 
 .wrapper__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 96px;
-  margin-left: 60px;
-  margin-right: 160px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 190px;
 }
 
 .wrapper__title {
@@ -179,5 +181,149 @@ header a {
   line-height: 18px;
   color: white;
   margin-left: 38px;
+}
+
+@media (max-width: 1924px) {
+  .wrapper__text {
+    padding-right: 500px;
+  }
+  .wrapper__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1760px) {
+  .wrapper__text {
+    padding-right: 300px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .wrapper__text {
+    padding-right: 150px;
+  }
+}
+
+/* Large desktops and laptops */
+@media (max-width: 1440px) {
+  body {
+    background-size: 80%;
+  }
+  .wrapper__text {
+    padding-right: 100px;
+    margin-left: 110px;
+  }
+  .wrapper img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper__text {
+    padding-right: 100px;
+  }
+  .wrapper__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .wrapper img {
+    width: 40%;
+    height: 50%;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  .block-1 {
+    background-image: url("../img/bg-blue2.png");
+    background-size: 100%;
+  }
+  .wrapper__menu {
+    display: block;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    height: 36px;
+    width: 84px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    margin-left: 38px;
+    cursor: pointer;
+  }
+  .header__home, .header__link, .header__user {
+    display: none;
+  }
+  .wrapper {
+    margin-top: 100px;
+  }
+  .wrapper img {
+    display: none;
+  }
+  .wrapper__title {
+    text-align: center;
+    padding-right: 0;
+    font-size: 55px;
+    line-height: 72px;
+    padding: 0 100px 0 100px;
+  }
+  .wrapper__subtitle {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .wrapper__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 262px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 796px) {
+  .block-1 {
+    background-image: none;
+    background-color: #1C57C9;
+    border-radius: 0 0 300px 0;
+  }
+  .wrapper__title {
+    font-size: 42px;
+    line-height: 140%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .wrapper__button {
+    margin-bottom: 200px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 507px) {
+  .block-1 {
+    background-image: none;
+    background-color: #1C57C9;
+    border-radius: 0 0 160px 0;
+  }
+  .wrapper__text {
+    padding: 0 20px 0 20px;
+    margin-left: 0;
+  }
+  .wrapper__button {
+    margin-bottom: 150px;
+  }
+}
+
+/* Iphone 5 */
+@media (max-width: 375px) {
+  .block-1 {
+    background-image: none;
+    background-color: #1C57C9;
+    border-radius: 0 0 160px 0;
+  }
+  .wrapper__button {
+    margin-bottom: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
