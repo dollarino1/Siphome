@@ -175,7 +175,7 @@ font-family: 'Inter', sans-serif;
         align-items: center;
         position: absolute;
         background: #765fcf;
-        height: 550px;
+        height: 100%;
         width: 100%;
         bottom: 0%;
         flex-direction: column;
@@ -191,11 +191,18 @@ font-family: 'Inter', sans-serif;
         li:first-child {
             margin-top: 150px;
         }
+        a {
+            margin-right:0;
+        }
     }
     .header__items.open {
-        clip-path: circle(1200px at 90% -20%);
-        -webkit-clip-path: circle(1200px at 90% -20%);
+        clip-path: circle(1400px at 100% -10%);
+        -webkit-clip-path: circle(1400px at 100% -10%);
         pointer-events: all;
+
+        a {
+            margin-right:0;
+        }
     }
     .header__user {
         display: none;
