@@ -485,10 +485,9 @@ header a {
   .block-3 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 900px;
+        grid-template-rows: 1fr 1fr 1fr 900px;
     background-image: none;
-    background-color: #1C57C9;
   }
   .block-3 img {
     display: block;
@@ -515,7 +514,25 @@ header a {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3/5;
-    background: #1C57C9;
+    background-color: #1C57C9;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .block-3__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 60px;
+  }
+  .block-3__card img {
+    position: absolute;
+    left: 375px;
   }
 }
 
