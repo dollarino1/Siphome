@@ -163,6 +163,7 @@ body {
         grid-area: card4;
     }
     .block-3 {
+        margin-top: 200px;
         display: grid;
         height: 1100px;
         grid-template-columns: 1fr 1fr;
@@ -214,6 +215,57 @@ body {
         letter-spacing: -0.02em;
         color: #262B35;
         margin-top: 15px;
+    }
+    .block-4 {
+        margin: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+    .block-4__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-right: 100px;
+        margin-top: 50px;
+        img {
+            margin-top: 40px;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    .block-4__input {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        input {
+            margin-bottom: 15px;
+            border: 1px solid #ccc; 
+            padding: 9px 210px 9px 10px; 
+        }
+        select {
+            margin-bottom: 15px;
+            border: 1px solid #ccc; 
+            padding: 9px 300px 9px 10px; 
+        }
+        textarea {
+            margin-bottom: 30px;
+            border: 1px solid #ccc; 
+            padding: 9px 193px 9px 10px; 
+        }
+        p {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background: #1ECE7A;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            color:white;
+            padding: 13px 35px 13px 35px;
+            cursor:pointer;
+        }
     }
 @media (max-width: 1924px) {
     .wrapper__text {
@@ -340,7 +392,14 @@ body {
             display: none;
         }
     }
-    
+    .block-4__text {
+        h3 {
+            font-size: 30px;
+            br {
+                display: none;
+            }
+        }
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -426,6 +485,25 @@ body {
     .header__user {
         display: none;
     }
+    .block-4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .block-4__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        text-align: center;
+            h3 {
+                font-size: 45px;
+            }
+    }
+    .block-4__input {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        margin-top: 65px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -443,6 +521,18 @@ body {
     }
     .wrapper__button {
         margin-bottom: 200px;
+    }
+    .block-3__cards {
+        padding-bottom: 100px;
+    }
+    .block-4 {
+        margin: 200px 0 0 0;
+    }
+    .block-4__text{
+        padding: 0 150px;
+        h3 {
+            font-size: 35px;
+        }
     }
 }
 
@@ -490,6 +580,18 @@ body {
     .block-3 {
         grid-template-rows: 0.2fr 0.5fr 1fr;
     }
+    .block-4 {
+        margin-top: 100px;
+        grid-template-rows: 0.7fr 1fr;
+    }
+    .block-4__text {
+        padding: 0 50px;
+    }
+    .block-4__form {
+        input {
+            
+        }
+    }
 }
 
 /* Iphone 5 */
@@ -504,5 +606,12 @@ body {
     }
     .block-3 {
         grid-template-rows: 0.2fr 0.3fr 1fr;
+        margin-top: 150px;
+    }
+    .block-3__cards {
+        padding-bottom: 100px;
+    }
+    .block-3__text {
+        padding: 0 15px;
     }
 }

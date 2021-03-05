@@ -123,14 +123,31 @@
     <div class="block-4">
         <div class="block-4__text">
             <div class="pretitle">Contact</div>
-            <div class="block-3__title">Skip logging in, 
-                get what you need 
-                with a few key details</div>
+            <h3 class="block-3__title">Skip logging in,<br>
+                get what you need <br>
+                with a few key details</h3>
                 <img src="img/block-4img.png" alt="">
         </div>
         <div class="block-4__input">
             <form class="block-4__form" action="/" method="POST">
-            <input type="text">
+                <p>Your Name (required)</p>
+                <input  type="text" placeholder="Enter name">
+                <p>Email (required)</p>
+                <input type="email" placeholder="Enter email">
+                <p>Subject</p>
+                <input type="text" placeholder="Enter subject">
+                <p>Select Job</p>
+                <select name="job" aria-placeholder="Please Select" id="">
+                    <option value="test1">test1</option>
+                    <option value="test1">test1</option>
+                    <option value="test1">test1</option>
+                    <option value="test1">test1</option>
+                </select>
+                <p>Company Name</p>
+                <input type="text" placeholder="Enter company name">
+                <p>Message<br>
+                <textarea name="comment"></textarea></p>
+                <input type="submit" value="Send Now">
             </form>
         </div>
     </div>
